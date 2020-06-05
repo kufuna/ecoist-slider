@@ -17,7 +17,7 @@ window.onload = function(){
 						this.style.opacity = '1';
 						if (active === 0 ) {
 							elems[elems.length - 1].style.transform = 'translate(0,0) scale(0.5)';
-							elems[elems.length - 1].style.transformOrigin = 'right';
+							elems[elems.length - 1].style.transformOrigin = 'center';
 							elems[elems.length - 1].style.opacity = '0';
 							elems[active + 2].style.transform = 'translate(100%,0) scale(0.5)';
 							elems[active + 2].style.transformOrigin = 'left';
@@ -27,7 +27,7 @@ window.onload = function(){
 							active++;
 						}else {
 							elems[active - 1].style.transform = 'translate(0,0) scale(0.5)';
-							elems[active - 1].style.transformOrigin = 'right';
+							elems[active - 1].style.transformOrigin = 'center';
 							elems[active - 1].style.opacity = '0';
 							if (active + 2 === elems.length) {
 								elems[0].style.transform = 'translate(100%,0) scale(0.5)';
@@ -52,7 +52,7 @@ window.onload = function(){
 							}
 						}
 					}else {
-						
+
 					}
 				}
 			})
