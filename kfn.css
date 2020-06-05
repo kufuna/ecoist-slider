@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+	background: #eee;
+	overflow-x: hidden;
+}
+.container {
+	max-width: 1284px;
+	margin: auto;
+	position: relative;
+}
+#ecoist-slider {
+	width: 100%;
+	position: relative;
+}
+#ecoist-slider .slider-container {
+	width: 100%;
+	padding-top: 33.3%;
+	display: flex;
+	justify-content: center;
+}
+#ecoist-slider .slider-container .item {
+	width: 47.6%;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transform: scale(0);
+	transition: 1s cubic-bezier(0.52, 0, 0.25, 0.99);
+}
+#ecoist-slider .slider-container .item .image {
+	display: flex;
+	justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+#ecoist-slider .slider-container .item .image img {
+	max-width: 100%;
+	height: auto;
+}
+@media (max-width: 767px) {
+	#ecoist-slider {
+	    width: 114vw;
+	    position: relative;
+	    margin-left: -7vw;
+	}
+	#ecoist-slider .slider-container {
+		padding-top: 107.3%;
+	}
+}
